@@ -77,7 +77,9 @@ ParsedFontFace ParsedFontFace::from_descriptors(CSSFontFaceDescriptors const& de
         font_family = extract_font_name(*value);
 
     ComputationContext computation_context {
-        .length_resolution_context = Length::ResolutionContext::for_window(*descriptors.parent_rule()->parent_style_sheet()->owning_document()->window())
+        // Use a document-based resolution context as the owning Document may not have a Window
+        // (e.g. when created via DOMParser). This avoids null Window dereferences.
+        .length_resolution_context = Length::ResolutionContext::for_document(*descriptors.parent_rule()->parent_style_sheet()->owning_document())
     };
 
     Optional<int> weight;
