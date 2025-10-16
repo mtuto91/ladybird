@@ -1,0 +1,506 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+  CMAKE_TOOLCHAIN_FILE="/workspace/Build/vcpkg/scripts/buildsystems/vcpkg.cmake"
+  LADYBIRD_CACHE_DIR="/workspace/Build/caches"
+  VCPKG_INSTALL_OPTIONS="--no-print-usage"
+  VCPKG_OVERLAY_TRIPLETS="/workspace/Meta/CMake/vcpkg/debug-triplets"
+
+Preset environment variables:
+
+  LADYBIRD_SOURCE_DIR="/workspace"
+  VCPKG_BINARY_SOURCES="clear;files,/workspace/Build/caches/vcpkg-binary-cache,readwrite;"
+  VCPKG_ROOT="/workspace/Build/vcpkg"
+  X_VCPKG_ASSET_SOURCES="clear;x-azurl,https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/,,read"
+
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-linux-dynamic...
+Compiler found: /usr/bin/c++
+The following packages are already installed:
+    angle:x64-linux-dynamic@chromium_7258 -- /workspace/Meta/CMake/vcpkg/overlay-ports/angle
+  * brotli:x64-linux-dynamic@1.1.0#1
+    cpptrace:x64-linux-dynamic@1.0.2 -- /workspace/Meta/CMake/vcpkg/overlay-ports/cpptrace
+    curl[brotli,core,http2,http3,non-http,openssl,ssl,websockets,zstd]:x64-linux-dynamic@8.16.0
+    dbus:x64-linux-dynamic@1.16.2#2
+  * egl-registry:x64-linux-dynamic@2024-01-25
+  * expat:x64-linux-dynamic@2.7.2
+    fast-float:x64-linux-dynamic@8.1.0
+  * giflib:x64-linux-dynamic@5.2.2#2
+  * libdwarf:x64-linux-dynamic@2.1.0
+    libjpeg-turbo:x64-linux-dynamic@3.1.1
+  * liblzma:x64-linux-dynamic@5.8.1
+    libpng[apng,core]:x64-linux-dynamic@1.6.50
+    libwebp[anim,core,img2webp,libwebpmux,mux,nearlossless,simd]:x64-linux-dynamic@1.6.0#1
+  * nghttp2:x64-linux-dynamic@1.67.1
+  * nghttp3:x64-linux-dynamic@1.11.0#1
+  * ngtcp2[core,openssl]:x64-linux-dynamic@1.15.1
+  * opengl-registry:x64-linux-dynamic@2024-02-10#1
+    openssl:x64-linux-dynamic@3.5.3
+    tiff[core,jpeg,lzma,zip,zstd]:x64-linux-dynamic@4.7.0
+  * vcpkg-cmake:x64-linux-dynamic@2024-04-23
+  * vcpkg-cmake-config:x64-linux-dynamic@2024-05-23
+  * vcpkg-cmake-get-vars:x64-linux-dynamic@2025-05-29
+  * vcpkg-get-python-packages:x64-linux-dynamic@2025-04-05
+    zlib:x64-linux-dynamic@1.3.1
+  * zstd:x64-linux-dynamic@1.5.7
+The following packages will be built and installed:
+  * bzip2[core,tool]:x64-linux-dynamic@1.0.8#6
+  * dav1d:x64-linux-dynamic@1.5.1#1
+  * dirent:x64-linux-dynamic@1.26
+    ffmpeg[avcodec,avdevice,avfilter,avformat,core,dav1d,openh264,opus,swresample,swscale,theora,vorbis,vpx,webp,zlib]:x64-linux-dynamic@7.1.1#5
+    fontconfig:x64-linux-dynamic@2.15.0#4
+  * freetype[brotli,bzip2,core,png,zlib]:x64-linux-dynamic@2.13.3
+  * gperf:x64-linux-dynamic@3.3
+    harfbuzz[core,freetype,icu]:x64-linux-dynamic@10.2.0
+  * highway:x64-linux-dynamic@1.3.0
+    icu[core,tools]:x64-linux-dynamic@76.1 -- /workspace/Meta/CMake/vcpkg/overlay-ports/icu
+  * lcms:x64-linux-dynamic@2.17
+    libavif[core,dav1d]:x64-linux-dynamic@1.3.0
+  * libiconv:x64-linux-dynamic@1.18#1
+    libjxl:x64-linux-dynamic@0.11.1#3
+  * libogg:x64-linux-dynamic@1.3.6#1
+    libproxy:x64-linux-dynamic@0.4.18#3
+  * libtheora:x64-linux-dynamic@1.2.0
+    libtommath:x64-linux-dynamic@1.3.0#2 -- /workspace/Meta/CMake/vcpkg/overlay-ports/libtommath
+  * libuuid:x64-linux-dynamic@1.0.3#15
+  * libvorbis:x64-linux-dynamic@1.3.7#4
+  * libvpx:x64-linux-dynamic@1.15.2#2
+    libxml2[core,iconv,zlib]:x64-linux-dynamic@2.15.0
+  * libyuv:x64-linux-dynamic@1916
+  * openh264:x64-linux-dynamic@2.6.0#3
+  * opus:x64-linux-dynamic@1.5.2
+  * pkgconf:x64-linux-dynamic@2.5.1#2
+  * pthread:x64-linux-dynamic@3.0.0#2
+  * pthreads:x64-linux-dynamic@3.0.0#14
+    sdl3:x64-linux-dynamic@3.2.22
+    simdutf:x64-linux-dynamic@7.4.0
+    skia[core,fontconfig,freetype,gl,harfbuzz,icu,vulkan]:x64-linux-dynamic@129#2 -- /workspace/Meta/CMake/vcpkg/overlay-ports/skia
+    sqlite3[core,json1]:x64-linux-dynamic@3.50.4
+  * vcpkg-gn:x64-linux-dynamic@2025-08-05
+  * vcpkg-make:x64-linux-dynamic@2025-09-14
+  * vcpkg-pkgconfig-get-modules:x64-linux-dynamic@2024-04-03
+  * vcpkg-tool-gn:x64-linux-dynamic@2025-08-05#1
+  * vcpkg-tool-meson:x64-linux-dynamic@1.9.0#1
+    vulkan:x64-linux-dynamic@2023-12-17 -- /workspace/Meta/CMake/vcpkg/overlay-ports/vulkan
+    vulkan-headers:x64-linux-dynamic@1.4.309.0
+  * vulkan-memory-allocator:x64-linux-dynamic@3.3.0
+    woff2:x64-linux-dynamic@1.0.2#5
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from /workspace/Build/caches/vcpkg-binary-cache in 116 us. Use --debug to see more details.
+Installing 1/41 libvpx:x64-linux-dynamic@1.15.2#2...
+Building libvpx:x64-linux-dynamic@1.15.2#2...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Note: libvpx only supports static library linkage. Building static library.
+-- Using cached webmproject-libvpx-v1.15.2.tar.gz
+-- Cleaning sources at /workspace/Build/vcpkg/buildtrees/libvpx/src/v1.15.2-1adb1c1dcd.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source /workspace/Build/vcpkg/downloads/webmproject-libvpx-v1.15.2.tar.gz
+-- Applying patch 0003-add-uwp-v142-and-v143-support.patch
+-- Applying patch 0004-remove-library-suffixes.patch
+-- Applying patch 0005-dont-expect-gnu-diff.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/libvpx/src/v1.15.2-1adb1c1dcd.clean
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/libvpx/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+-- Build info. Target: x86_64-linux-gcc; Options: --disable-examples --disable-tools --disable-docs --disable-unit-tests --enable-pic --enable-static --disable-shared
+-- Configuring libvpx for Release
+-- Building libvpx for Release
+-- Installing libvpx for Release
+-- Configuring libvpx for Debug
+-- Building libvpx for Debug
+-- Installing libvpx for Debug
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvpx_x64-linux-dynamic/lib/pkgconfig/vpx.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvpx_x64-linux-dynamic/debug/lib/pkgconfig/vpx.pc
+-- Installing: /workspace/Build/vcpkg/packages/libvpx_x64-linux-dynamic/share/libvpx/copyright
+-- Performing post-build validation
+Starting submission of libvpx:x64-linux-dynamic@1.15.2#2 to 1 binary cache(s) in the background
+Elapsed time to handle libvpx:x64-linux-dynamic: 30 s
+libvpx:x64-linux-dynamic package ABI: 094b8da8f2831423ef6396dd5628ed6dc444193d12179977a4ceb71982510a4e
+Installing 2/41 libogg:x64-linux-dynamic@1.3.6#1...
+Building libogg:x64-linux-dynamic@1.3.6#1...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download xiph-ogg-v1.3.6.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/c247e1da8b12f8b33272fafb6d7c171a1a2687c3632977439fa60b96ccc2ad751d88a2931bb3e18e1ddf2eea2e82cdd0aab087b2ec5393a9228c703476fa0167
+Download successful! Asset cache hit, did not try authoritative source https://github.com/xiph/ogg/archive/v1.3.6.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/xiph-ogg-v1.3.6.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/libogg/src/v1.3.6-4ad11a7327.clean
+-- Configuring x64-linux-dynamic
+-- Building x64-linux-dynamic-dbg
+-- Building x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libogg_x64-linux-dynamic/lib/pkgconfig/ogg.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libogg_x64-linux-dynamic/debug/lib/pkgconfig/ogg.pc
+-- Installing: /workspace/Build/vcpkg/packages/libogg_x64-linux-dynamic/share/libogg/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libogg_x64-linux-dynamic/debug/lib/libogg.so.0.8.6' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libogg_x64-linux-dynamic/lib/libogg.so.0.8.6' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of libogg:x64-linux-dynamic@1.3.6#1 to 1 binary cache(s) in the background
+Elapsed time to handle libogg:x64-linux-dynamic: 2.4 s
+libogg:x64-linux-dynamic package ABI: 4e74eef3f719ded97389157be5391e02c45f130bc91c1e91059e454fe169cd14
+Completed submission of libvpx:x64-linux-dynamic@1.15.2#2 to 1 binary cache(s) in 578 ms
+Installing 3/41 libvorbis:x64-linux-dynamic@1.3.7#4...
+Building libvorbis:x64-linux-dynamic@1.3.7#4...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download xiph-vorbis-v1.3.7.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/bfb6f5dbfd49ed38b2b08b3667c06d02e68f649068a050f21a3cc7e1e56b27afd546aaa3199c4f6448f03f6e66a82f9a9dc2241c826d3d1d4acbd38339b9e9fb
+Download successful! Asset cache hit, did not try authoritative source https://github.com/xiph/vorbis/archive/v1.3.7.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/xiph-vorbis-v1.3.7.tar.gz
+-- Applying patch 0001-Dont-export-vorbisenc-functions.patch
+-- Applying patch 0002-Fixup-pkgconfig-libs.patch
+-- Applying patch 0003-def-mingw-compat.patch
+-- Applying patch 0004-ogg-find-dependency.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/libvorbis/src/v1.3.7-c32164610e.clean
+-- Configuring x64-linux-dynamic
+-- Building x64-linux-dynamic-dbg
+-- Building x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/lib/pkgconfig/vorbis.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/lib/pkgconfig/vorbisenc.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/lib/pkgconfig/vorbisfile.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/debug/lib/pkgconfig/vorbis.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/debug/lib/pkgconfig/vorbisenc.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/debug/lib/pkgconfig/vorbisfile.pc
+-- Installing: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/share/libvorbis/usage
+-- Installing: /workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/share/libvorbis/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/debug/lib/libvorbis.so.0.4.9' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/debug/lib/libvorbisenc.so.2.0.12' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/debug/lib/libvorbisfile.so.3.3.8' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/lib/libvorbis.so.0.4.9' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/lib/libvorbisenc.so.2.0.12' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libvorbis_x64-linux-dynamic/lib/libvorbisfile.so.3.3.8' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of libvorbis:x64-linux-dynamic@1.3.7#4 to 1 binary cache(s) in the background
+Elapsed time to handle libvorbis:x64-linux-dynamic: 3.6 s
+libvorbis:x64-linux-dynamic package ABI: 8197897abde08218c7f6522e5fa33427d57be260c554b8d1c989c12f97d0fc36
+Completed submission of libogg:x64-linux-dynamic@1.3.6#1 to 1 binary cache(s) in 6.15 ms
+Installing 4/41 libtheora:x64-linux-dynamic@1.2.0...
+Building libtheora:x64-linux-dynamic@1.2.0...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download xiph-theora-v1.2.0.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/b2aac15528f0ef8258c0902e33e8211e8858c3c7e6e9eeb708cce5922de5f0e412255ddaf540a50c0ebf601df6c4376fd24a0bdd7f8de4432c4ae6e5d6ffe2b6
+Download successful! Asset cache hit, did not try authoritative source https://github.com/xiph/theora/archive/v1.2.0.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/xiph-theora-v1.2.0.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/libtheora/src/v1.2.0-ec5b5ef551.clean
+-- Configuring x64-linux-dynamic
+-- Building x64-linux-dynamic-dbg
+-- Building x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/lib/pkgconfig/theora.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/lib/pkgconfig/theoradec.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/lib/pkgconfig/theoraenc.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/debug/lib/pkgconfig/theora.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/debug/lib/pkgconfig/theoradec.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/debug/lib/pkgconfig/theoraenc.pc
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/debug/lib/libtheora.so' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/debug/lib/libtheoradec.so' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/debug/lib/libtheoraenc.so' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/lib/libtheora.so' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/lib/libtheoradec.so' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/libtheora_x64-linux-dynamic/lib/libtheoraenc.so' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of libtheora:x64-linux-dynamic@1.2.0 to 1 binary cache(s) in the background
+Elapsed time to handle libtheora:x64-linux-dynamic: 2.9 s
+libtheora:x64-linux-dynamic package ABI: d16f8888dcf2899aabd26edaf22bb39837d23e32d61489b37730d62d7b32cd53
+Completed submission of libvorbis:x64-linux-dynamic@1.3.7#4 to 1 binary cache(s) in 79.3 ms
+Installing 5/41 opus:x64-linux-dynamic@1.5.2...
+Building opus:x64-linux-dynamic@1.5.2...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download xiph-opus-v1.5.2.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/4ffefd9c035671024f9720c5129bfe395dea04f0d6b730041c2804e89b1db6e4d19633ad1ae58855afc355034233537361e707f26dc53adac916554830038fab
+Download successful! Asset cache hit, did not try authoritative source https://github.com/xiph/opus/archive/v1.5.2.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/xiph-opus-v1.5.2.tar.gz
+-- Applying patch fix-pkgconfig-version.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/opus/src/v1.5.2-81ed242155.clean
+-- Configuring x64-linux-dynamic
+-- Building x64-linux-dynamic-dbg
+-- Building x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/opus_x64-linux-dynamic/lib/pkgconfig/opus.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/opus_x64-linux-dynamic/debug/lib/pkgconfig/opus.pc
+-- Installing: /workspace/Build/vcpkg/packages/opus_x64-linux-dynamic/share/opus/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/opus_x64-linux-dynamic/debug/lib/libopus.so.0.10.1' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/opus_x64-linux-dynamic/lib/libopus.so.0.10.1' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of opus:x64-linux-dynamic@1.5.2 to 1 binary cache(s) in the background
+Elapsed time to handle opus:x64-linux-dynamic: 7.9 s
+opus:x64-linux-dynamic package ABI: 9924ea06c1a7b2a04b0922d6009908a18bfee4c3e1a9038ce89fd5592c62ffbe
+Completed submission of libtheora:x64-linux-dynamic@1.2.0 to 1 binary cache(s) in 78.8 ms
+Installing 6/41 vcpkg-tool-meson:x64-linux-dynamic@1.9.0#1...
+Building vcpkg-tool-meson:x64-linux-dynamic@1.9.0#1...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-tool-meson_x64-linux-dynamic/share/vcpkg-tool-meson/copyright
+Trying to download meson-1.9.0.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/ecd69b6734be14c467f7db67dd88c0e57ebfad83ce3ddada131ff3e43ac964523e1083d7c7f3803033a9a76adbc32ad26dd2e3aca69884269000ca64130bde07
+Download successful! Asset cache hit, did not try authoritative source https://github.com/mesonbuild/meson/archive/1.9.0.tar.gz
+-- Applying patch /workspace/Build/vcpkg/packages/vcpkg-tool-meson_x64-linux-dynamic/share/vcpkg-tool-meson/meson-intl.patch
+-- Applying patch /workspace/Build/vcpkg/packages/vcpkg-tool-meson_x64-linux-dynamic/share/vcpkg-tool-meson/adjust-python-dep.patch
+-- Applying patch /workspace/Build/vcpkg/packages/vcpkg-tool-meson_x64-linux-dynamic/share/vcpkg-tool-meson/adjust-args.patch
+-- Applying patch /workspace/Build/vcpkg/packages/vcpkg-tool-meson_x64-linux-dynamic/share/vcpkg-tool-meson/remove-pkgconfig-specialization.patch
+-- Applying patch /workspace/Build/vcpkg/packages/vcpkg-tool-meson_x64-linux-dynamic/share/vcpkg-tool-meson/meson-56879d5.diff
+-- Found Python version '3.13.3 at /usr/bin/python3'
+-- Using meson: /workspace/Build/vcpkg/downloads/tools/meson-1.9.0-a71af3/meson.py
+-- Performing post-build validation
+Starting submission of vcpkg-tool-meson:x64-linux-dynamic@1.9.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-tool-meson:x64-linux-dynamic: 1.8 s
+vcpkg-tool-meson:x64-linux-dynamic package ABI: 17c81c89716c5da25ce845b4a978352b677478a4487181d501cf0408cd2356fd
+Completed submission of opus:x64-linux-dynamic@1.5.2 to 1 binary cache(s) in 79.9 ms
+Installing 7/41 openh264:x64-linux-dynamic@2.6.0#3...
+Building openh264:x64-linux-dynamic@2.6.0#3...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Found Python version '3.13.3 at /usr/bin/python3'
+-- Using meson: /workspace/Build/vcpkg/downloads/tools/meson-1.9.0-a71af3/meson.py
+Trying to download cisco-openh264-v2.6.0.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/26a03acde7153a6b40b99f00641772433a244c72a3cc4bca6d903cf3b770174d028369a2fb73b2f0774e1124db0e269758eed6d88975347a815e0366c820d247
+Download successful! Asset cache hit, did not try authoritative source https://github.com/cisco/openh264/archive/v2.6.0.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/cisco-openh264-v2.6.0.tar.gz
+-- Applying patch add-openbsd-and-freebsd-to-meson.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/openh264/src/v2.6.0-9d19973efa.clean
+-- Configuring x64-linux-dynamic-dbg
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/openh264/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+-- Configuring x64-linux-dynamic-dbg done
+-- Configuring x64-linux-dynamic-rel
+-- Configuring x64-linux-dynamic-rel done
+-- Package x64-linux-dynamic-dbg
+-- Package x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/openh264_x64-linux-dynamic/lib/pkgconfig/openh264.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/openh264_x64-linux-dynamic/debug/lib/pkgconfig/openh264.pc
+-- Installing: /workspace/Build/vcpkg/packages/openh264_x64-linux-dynamic/share/openh264/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/openh264_x64-linux-dynamic/debug/lib/libopenh264.so.2.6.0' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/openh264_x64-linux-dynamic/lib/libopenh264.so.2.6.0' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of openh264:x64-linux-dynamic@2.6.0#3 to 1 binary cache(s) in the background
+Elapsed time to handle openh264:x64-linux-dynamic: 16 s
+openh264:x64-linux-dynamic package ABI: 19d6e1294d6164a6af92f26e9b207796dbfa3c92f0736e8154ee6c63b6a33393
+Completed submission of vcpkg-tool-meson:x64-linux-dynamic@1.9.0#1 to 1 binary cache(s) in 2.75 ms
+Installing 8/41 dav1d:x64-linux-dynamic@1.5.1#1...
+Building dav1d:x64-linux-dynamic@1.5.1#1...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Found Python version '3.13.3 at /usr/bin/python3'
+-- Using meson: /workspace/Build/vcpkg/downloads/tools/meson-1.9.0-a71af3/meson.py
+Trying to download videolan-dav1d-1.5.1.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/96973b59b367bc98fbc8b6c4f871259d9635caf487da86d7f5a4c42715424faf937e7e3f142a3175a7b473c3e945decb03a23e7a854b7c0ff0d11eeb5b692fad
+Download successful! Asset cache hit, did not try authoritative source https://github.com/videolan/dav1d/archive/1.5.1.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/videolan-dav1d-1.5.1.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/dav1d/src/1.5.1-9dd9bb4d1f.clean
+-- Configuring x64-linux-dynamic-dbg
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/dav1d/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+-- Configuring x64-linux-dynamic-dbg done
+-- Configuring x64-linux-dynamic-rel
+-- Configuring x64-linux-dynamic-rel done
+-- Package x64-linux-dynamic-dbg
+-- Package x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/dav1d_x64-linux-dynamic/lib/pkgconfig/dav1d.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/dav1d_x64-linux-dynamic/debug/lib/pkgconfig/dav1d.pc
+-- Installing: /workspace/Build/vcpkg/packages/dav1d_x64-linux-dynamic/share/dav1d/usage
+-- Installing: /workspace/Build/vcpkg/packages/dav1d_x64-linux-dynamic/share/dav1d/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/dav1d_x64-linux-dynamic/debug/lib/libdav1d.so.7.0.0' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/dav1d_x64-linux-dynamic/lib/libdav1d.so.7.0.0' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of dav1d:x64-linux-dynamic@1.5.1#1 to 1 binary cache(s) in the background
+Elapsed time to handle dav1d:x64-linux-dynamic: 40 s
+dav1d:x64-linux-dynamic package ABI: e3899c237a32896658884344bbc7881866bfa4ec73ad8a29e859e33ebb9fdb25
+Completed submission of openh264:x64-linux-dynamic@2.6.0#3 to 1 binary cache(s) in 192 ms
+Installing 9/41 pkgconf:x64-linux-dynamic@2.5.1#2...
+Building pkgconf:x64-linux-dynamic@2.5.1#2...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Found Python version '3.13.3 at /usr/bin/python3'
+-- Using meson: /workspace/Build/vcpkg/downloads/tools/meson-1.9.0-a71af3/meson.py
+Trying to download pkgconf-pkgconf-pkgconf-2.5.1.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/53244f372ea21125a1d97c5b89a84299740b55a66165782e807ed23adab3a07408a1547f1f40156e3060359660d07f49846c8b4893beef10ac9440ab7e8611cc
+Download successful! Asset cache hit, did not try authoritative source https://github.com/pkgconf/pkgconf/archive/pkgconf-2.5.1.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/pkgconf-pkgconf-pkgconf-2.5.1.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/pkgconf/src/conf-2.5.1-c2c2eca4e6.clean
+-- Configuring x64-linux-dynamic-dbg
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/pkgconf/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+-- Configuring x64-linux-dynamic-dbg done
+-- Configuring x64-linux-dynamic-rel
+-- Configuring x64-linux-dynamic-rel done
+-- Package x64-linux-dynamic-dbg
+-- Package x64-linux-dynamic-rel
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/lib/pkgconfig/libpkgconf.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/debug/lib/pkgconfig/libpkgconf.pc
+-- Installing: /workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/share/pkgconf/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/debug/lib/libpkgconf.so.7.0.0' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/lib/libpkgconf.so.7.0.0' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/tools/pkgconf/bomtool' (From '' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/pkgconf_x64-linux-dynamic/tools/pkgconf/pkgconf' (From '' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Performing post-build validation
+Starting submission of pkgconf:x64-linux-dynamic@2.5.1#2 to 1 binary cache(s) in the background
+Elapsed time to handle pkgconf:x64-linux-dynamic: 4.1 s
+pkgconf:x64-linux-dynamic package ABI: 0a0c73895c62a9075837d590b0676c643ffa04d13c2fcfe5eaab0be5e9e6ccf7
+Completed submission of dav1d:x64-linux-dynamic@1.5.1#1 to 1 binary cache(s) in 229 ms
+Installing 10/41 vcpkg-pkgconfig-get-modules:x64-linux-dynamic@2024-04-03...
+Building vcpkg-pkgconfig-get-modules:x64-linux-dynamic@2024-04-03...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-pkgconfig-get-modules_x64-linux-dynamic/share/vcpkg-pkgconfig-get-modules/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-pkgconfig-get-modules:x64-linux-dynamic@2024-04-03 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-pkgconfig-get-modules:x64-linux-dynamic: 16.2 ms
+vcpkg-pkgconfig-get-modules:x64-linux-dynamic package ABI: 275975ed00056ff70e58953640e29117a643ef662bdfeb133c618b5d5fa44984
+Installing 11/41 ffmpeg[avcodec,avdevice,avfilter,avformat,core,dav1d,openh264,opus,swresample,swscale,theora,vorbis,vpx,webp,zlib]:x64-linux-dynamic@7.1.1#5...
+Building ffmpeg[avcodec,avdevice,avfilter,avformat,core,dav1d,openh264,opus,swresample,swscale,theora,vorbis,vpx,webp,zlib]:x64-linux-dynamic@7.1.1#5...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download ffmpeg-ffmpeg-n7.1.1.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/6b9a5ee501be41d6abc7579a106263b31f787321cbc45dedee97abf992bf8236cdb2394571dd256a74154f4a20018d429ae7e7f0409611ddc4d6f529d924d175
+Download successful! Asset cache hit, did not try authoritative source https://github.com/ffmpeg/ffmpeg/archive/n7.1.1.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/ffmpeg-ffmpeg-n7.1.1.tar.gz
+-- Applying patch 0001-create-lib-libraries.patch
+-- Applying patch 0002-fix-msvc-link.patch
+-- Applying patch 0003-fix-windowsinclude.patch
+-- Applying patch 0004-dependencies.patch
+-- Applying patch 0005-fix-nasm.patch
+-- Applying patch 0007-fix-lib-naming.patch
+-- Applying patch 0013-define-WINVER.patch
+-- Applying patch 0020-fix-aarch64-libswscale.patch
+-- Applying patch 0024-fix-osx-host-c11.patch
+-- Applying patch 0040-ffmpeg-add-av_stream_get_first_dts-for-chromium.patch
+-- Applying patch 0041-add-const-for-opengl-definition.patch
+-- Applying patch 0043-fix-miss-head.patch
+-- Applying patch 0044-fix-vulkan-debug-callback-abi.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/ffmpeg/src/n7.1.1-92d93b4c20.clean
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/ffmpeg/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+-- Building Options: --enable-pic --disable-doc --enable-debug --enable-runtime-cpudetect --disable-autodetect --target-os=linux --enable-pthreads --cc=cc --host_cc=cc --cxx=c++ --nm=nm --ar='ar' --ranlib=ranlib --strip=strip --disable-ffmpeg --disable-ffplay --disable-ffprobe --enable-avcodec --enable-avdevice --enable-avformat --enable-avfilter --disable-postproc --enable-swresample --enable-swscale --disable-alsa --disable-amf --disable-libaom --disable-libass --disable-avisynth --disable-bzlib --enable-libdav1d --disable-libfdk-aac --disable-libfontconfig --disable-libharfbuzz --disable-libfreetype --disable-libfribidi --disable-iconv --disable-libilbc --disable-lzma --disable-libmp3lame --disable-libmodplug --disable-cuda --disable-nvenc --disable-nvdec  --disable-cuvid --disable-ffnvcodec --disable-opencl --disable-opengl --enable-libopenh264 --disable-libopenjpeg --disable-libopenmpt --disable-openssl --enable-libopus --disable-sdl2 --disable-libsnappy --disable-libsoxr --disable-libspeex --disable-libssh --disable-libtensorflow --disable-libtesseract --enable-libtheora --enable-libvorbis --enable-libvpx --disable-vulkan --enable-libwebp --disable-libx264 --disable-libx265 --disable-libxml2 --enable-zlib --disable-libsrt --disable-libmfx --disable-vaapi --enable-cross-compile --disable-static --enable-shared --pkg-config="/bin/pkg-config"
+-- Building Release Options: --enable-optimizations --extra-ldflags=-L"/workspace/Build/debug/vcpkg_installed/x64-linux-dynamic/lib"
+-- Building ffmpeg for Release
+-- Building Debug Options: --disable-optimizations --extra-ldflags=-L"/workspace/Build/debug/vcpkg_installed/x64-linux-dynamic/debug/lib"
+-- Building ffmpeg for Debug
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libavcodec.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libavdevice.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libavfilter.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libavformat.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libavutil.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libswresample.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/pkgconfig/libswscale.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libavcodec.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libavdevice.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libavfilter.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libavformat.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libavutil.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libswresample.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/pkgconfig/libswscale.pc
+-- Dependencies (release): 
+-- Dependencies (debug):   
+-- Installing: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/share/ffmpeg/usage
+-- Installing: /workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/share/ffmpeg/copyright
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libavcodec.so.61.19.101' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libavdevice.so.61.3.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libavfilter.so.10.4.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libavformat.so.61.7.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libavutil.so.59.39.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libswresample.so.5.3.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/debug/lib/libswscale.so.8.3.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libavcodec.so.61.19.101' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libavdevice.so.61.3.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libavfilter.so.10.4.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libavformat.so.61.7.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libavutil.so.59.39.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libswresample.so.5.3.100' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/ffmpeg_x64-linux-dynamic/lib/libswscale.so.8.3.100' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of ffmpeg[avcodec,avdevice,avfilter,avformat,core,dav1d,openh264,opus,swresample,swscale,theora,vorbis,vpx,webp,zlib]:x64-linux-dynamic@7.1.1#5 to 1 binary cache(s) in the background
+Elapsed time to handle ffmpeg:x64-linux-dynamic: 3.4 min
+ffmpeg:x64-linux-dynamic package ABI: 9a6bbc76c886f3402fb1b9d8d863d7120265b27a3705939755885859009e9a4e
+Completed submission of pkgconf:x64-linux-dynamic@2.5.1#2 to 1 binary cache(s) in 16.6 ms
+Completed submission of vcpkg-pkgconfig-get-modules:x64-linux-dynamic@2024-04-03 to 1 binary cache(s) in 1.79 ms
+Installing 12/41 pthreads:x64-linux-dynamic@3.0.0#14...
+Building pthreads:x64-linux-dynamic@3.0.0#14...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of pthreads:x64-linux-dynamic@3.0.0#14 to 1 binary cache(s) in the background
+Elapsed time to handle pthreads:x64-linux-dynamic: 22.9 ms
+pthreads:x64-linux-dynamic package ABI: cc2cc3d2934f97b738c1d491bcf2152e68a6053c9d627224f1fa5a625eec1ffe
+Installing 13/41 pthread:x64-linux-dynamic@3.0.0#2...
+Building pthread:x64-linux-dynamic@3.0.0#2...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of pthread:x64-linux-dynamic@3.0.0#2 to 1 binary cache(s) in the background
+Elapsed time to handle pthread:x64-linux-dynamic: 15.2 ms
+pthread:x64-linux-dynamic package ABI: 19cb57d757696aad80ffe76f92513caad9ee8cff9019e9918042585be734b7ad
+Installing 14/41 libuuid:x64-linux-dynamic@1.0.3#15...
+Building libuuid:x64-linux-dynamic@1.0.3#15...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download libuuid-1.0.3.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/77488caccc66503f6f2ded7bdfc4d3bc2c20b24a8dc95b2051633c695e99ec27876ffbafe38269b939826e1fdb06eea328f07b796c9e0aaca12331a787175507
+Download successful! Asset cache hit, did not try authoritative source https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=cfhcable, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=pilotfiber, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=gigenet, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=versaweb, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=ayera, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=netactuate, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=phoenixnap, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=astuteinternet, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=freefr, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=netcologne, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=deac-riga, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=excellmedia, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=iweb, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=jaist, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=jztkft, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=managedway, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=nchc, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=netix, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=ufpr, or https://sourceforge.net/projects/libuuid/files///libuuid-1.0.3.tar.gz/download?use_mirror=tenet
+-- Extracting source /workspace/Build/vcpkg/downloads/libuuid-1.0.3.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/libuuid/src/-f5e8f5589c.clean
+-- Configuring x64-linux-dynamic
+-- Building x64-linux-dynamic-dbg
+-- Building x64-linux-dynamic-rel
+-- Installing: /workspace/Build/vcpkg/packages/libuuid_x64-linux-dynamic/lib/pkgconfig/uuid.pc
+-- Installing: /workspace/Build/vcpkg/packages/libuuid_x64-linux-dynamic/debug/lib/pkgconfig/uuid.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libuuid_x64-linux-dynamic/lib/pkgconfig/uuid.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/libuuid_x64-linux-dynamic/debug/lib/pkgconfig/uuid.pc
+-- Installing: /workspace/Build/vcpkg/packages/libuuid_x64-linux-dynamic/share/libuuid/copyright
+-- Performing post-build validation
+Starting submission of libuuid:x64-linux-dynamic@1.0.3#15 to 1 binary cache(s) in the background
+Elapsed time to handle libuuid:x64-linux-dynamic: 1.6 s
+libuuid:x64-linux-dynamic package ABI: 7a8a732bdd3d4c3faae2ec68cb79790468f480b3038ce310b2930808879e4934
+Installing 15/41 libiconv:x64-linux-dynamic@1.18#1...
+Building libiconv:x64-linux-dynamic@1.18#1...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Not building GNU libiconv.
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of libiconv:x64-linux-dynamic@1.18#1 to 1 binary cache(s) in the background
+Elapsed time to handle libiconv:x64-linux-dynamic: 15.8 ms
+libiconv:x64-linux-dynamic package ABI: b3459cc0f9317fa30358f9f76835ba58fe12aa864ab191705adc2a9745e976a4
+Installing 16/41 vcpkg-make:x64-linux-dynamic@2025-09-14...
+Building vcpkg-make:x64-linux-dynamic@2025-09-14...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download automake-1.17.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/11357dfab8cbf4b5d94d9d06e475732ca01df82bef1284888a34bd558afc37b1a239bed1b5eb18a9dbcc326344fb7b1b301f77bb8385131eb8e1e118b677883a
+Download successful! Asset cache hit, did not try authoritative source https://ftp.gnu.org/gnu/automake/automake-1.17.tar.gz, or https://www.mirrorservice.org/sites/ftp.gnu.org/gnu/automake/automake-1.17.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/automake-1.17.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/vcpkg-make/src/automake-1-c362683103.clean
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/vcpkg-make/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+-- x64-linux-dynamic autotools triplet: x86_64-pc-linux-gnu (from config.guess)
+-- Performing post-build validation
+Starting submission of vcpkg-make:x64-linux-dynamic@2025-09-14 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-make:x64-linux-dynamic: 1.9 s
+vcpkg-make:x64-linux-dynamic package ABI: e896a085a0c8719e6b0a6a2e083ad263a230c8f38c5fff98987bc7f601d402d2
+Completed submission of ffmpeg[avcodec,avdevice,avfilter,avformat,core,dav1d,openh264,opus,swresample,swscale,theora,vorbis,vpx,webp,zlib]:x64-linux-dynamic@7.1.1#5 to 1 binary cache(s) in 2.3 s
+Completed submission of pthreads:x64-linux-dynamic@3.0.0#14 to 1 binary cache(s) in 3.16 ms
+Completed submission of pthread:x64-linux-dynamic@3.0.0#2 to 1 binary cache(s) in 2.38 ms
+Completed submission of libuuid:x64-linux-dynamic@1.0.3#15 to 1 binary cache(s) in 5.89 ms
+Completed submission of libiconv:x64-linux-dynamic@1.18#1 to 1 binary cache(s) in 2.35 ms
+Installing 17/41 gperf:x64-linux-dynamic@3.3...
+Building gperf:x64-linux-dynamic@3.3...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download gperf-3.3.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/246b75b8ce7d77d6a8725cd15f1cf2e68da404812573af1d5bf32dbe6ad4228f48757baefc77bcb1f5597c2397043c04d31d8a04ab507bfa7a80f85e1ab6045f
+Download successful! Asset cache hit, did not try authoritative source https://ftpmirror.gnu.org/gnu/gperf/gperf-3.3.tar.gz, or https://ftp.gnu.org/pub/gnu/gperf/gperf-3.3.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/gperf-3.3.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/gperf/src/gperf-3-b814f52c10.clean
+-- Getting CMake variables for x64-linux-dynamic
+-- Loading CMake variables from /workspace/Build/vcpkg/buildtrees/gperf/cmake-get-vars_C_CXX-x64-linux-dynamic.cmake.log
+CMake Error at /workspace/Build/debug/vcpkg_installed/x64-linux-dynamic/share/vcpkg-make/vcpkg_make.cmake:83 (message):
+  gperf currently requires the following programs from the system package
+  manager:
+
+          autoconf autoconf-archive automake libtoolize
+      On Debian and Ubuntu derivatives:
+          sudo apt-get install autoconf autoconf-archive automake libtool
+      On recent Red Hat and Fedora derivatives:
+          sudo dnf install autoconf autoconf-archive automake libtool
+      On Arch Linux and derivatives:
+          sudo pacman -S autoconf autoconf-archive automake libtool
+      On Alpine:
+          apk add autoconf autoconf-archive automake libtool
+      On macOS:
+          brew install autoconf autoconf-archive automake libtool
+
+Call Stack (most recent call first):
+  /workspace/Build/debug/vcpkg_installed/x64-linux-dynamic/share/vcpkg-make/vcpkg_make_configure.cmake:62 (vcpkg_run_autoreconf)
+  buildtrees/versioning_/versions/gperf/d5c53333d7745d56f06cb3e014c7c424a66ef4a7/portfile.cmake:17 (vcpkg_make_configure)
+  scripts/ports.cmake:206 (include)
+
+
+error: building gperf:x64-linux-dynamic failed with: BUILD_FAILED
+See https://learn.microsoft.com/vcpkg/troubleshoot/build-failures?WT.mc_id=vcpkg_inproduct_cli for more information.
+Elapsed time to handle gperf:x64-linux-dynamic: 1.7 s
+Please ensure you're using the latest port files with `git pull` and `vcpkg update`.
+Then check for known issues at:
+  https://github.com/microsoft/vcpkg/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+gperf
+You can submit a new issue at:
+  https://github.com/microsoft/vcpkg/issues/new?title=%5Bgperf%5D%20build%20error%20on%20x64-linux-dynamic&body=Copy%20issue%20body%20from%20%2Fworkspace%2FBuild%2Fdebug%2Fvcpkg_installed%2Fvcpkg%2Fissue_body.md
+You can also submit an issue by running (GitHub CLI must be installed):
+  /usr/local/bin/gh issue create -R microsoft/vcpkg --title "[gperf] Build failure on x64-linux-dynamic" --body-file /workspace/Build/debug/vcpkg_installed/vcpkg/issue_body.md
+Completed submission of vcpkg-make:x64-linux-dynamic@2025-09-14 to 1 binary cache(s) in 4.61 ms
+-- Running vcpkg install - failed
+CMake Error at Build/vcpkg/scripts/buildsystems/vcpkg.cmake:943 (message):
+  vcpkg install failed.  See logs for more information:
+  /workspace/Build/debug/vcpkg-manifest-install.log
+Call Stack (most recent call first):
+  /usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:146 (include)
+  CMakeLists.txt:30 (project)
+
+
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+-- Configuring incomplete, errors occurred!

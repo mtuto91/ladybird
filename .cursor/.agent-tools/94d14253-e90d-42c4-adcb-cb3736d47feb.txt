@@ -1,0 +1,264 @@
+Cloning into 'vcpkg'...
+Note: switching to 'b0b3de1b1a0aa4b8f2822460aa7f42f991629b3f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b0b3de1b1a [vcpkg-tool-meson] Add support for riscv64 (#47420)
+Downloading vcpkg-glibc...
+vcpkg package management program version 2025-09-03-4580816534ed8fd9634ac83d46471440edd82dfe
+
+See LICENSE.txt for license information.
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+  CMAKE_TOOLCHAIN_FILE="/workspace/Build/vcpkg/scripts/buildsystems/vcpkg.cmake"
+  LADYBIRD_CACHE_DIR="/workspace/Build/caches"
+  VCPKG_INSTALL_OPTIONS="--no-print-usage"
+  VCPKG_OVERLAY_TRIPLETS="/workspace/Meta/CMake/vcpkg/debug-triplets"
+
+Preset environment variables:
+
+  LADYBIRD_SOURCE_DIR="/workspace"
+  VCPKG_BINARY_SOURCES="clear;files,/workspace/Build/caches/vcpkg-binary-cache,readwrite;"
+  VCPKG_ROOT="/workspace/Build/vcpkg"
+  X_VCPKG_ASSET_SOURCES="clear;x-azurl,https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/,,read"
+
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-linux-dynamic...
+Compiler found: /usr/bin/c++
+The following packages will be built and installed:
+    angle:x64-linux-dynamic@chromium_7258 -- /workspace/Meta/CMake/vcpkg/overlay-ports/angle
+  * brotli:x64-linux-dynamic@1.1.0#1
+  * bzip2[core,tool]:x64-linux-dynamic@1.0.8#6
+    cpptrace:x64-linux-dynamic@1.0.2 -- /workspace/Meta/CMake/vcpkg/overlay-ports/cpptrace
+    curl[brotli,core,http2,http3,non-http,openssl,ssl,websockets,zstd]:x64-linux-dynamic@8.16.0
+  * dav1d:x64-linux-dynamic@1.5.1#1
+    dbus:x64-linux-dynamic@1.16.2#2
+  * dirent:x64-linux-dynamic@1.26
+  * egl-registry:x64-linux-dynamic@2024-01-25
+  * expat:x64-linux-dynamic@2.7.2
+    fast-float:x64-linux-dynamic@8.1.0
+    ffmpeg[avcodec,avdevice,avfilter,avformat,core,dav1d,openh264,opus,swresample,swscale,theora,vorbis,vpx,webp,zlib]:x64-linux-dynamic@7.1.1#5
+    fontconfig:x64-linux-dynamic@2.15.0#4
+  * freetype[brotli,bzip2,core,png,zlib]:x64-linux-dynamic@2.13.3
+  * giflib:x64-linux-dynamic@5.2.2#2
+  * gperf:x64-linux-dynamic@3.3
+    harfbuzz[core,freetype,icu]:x64-linux-dynamic@10.2.0
+  * highway:x64-linux-dynamic@1.3.0
+    icu[core,tools]:x64-linux-dynamic@76.1 -- /workspace/Meta/CMake/vcpkg/overlay-ports/icu
+  * lcms:x64-linux-dynamic@2.17
+    libavif[core,dav1d]:x64-linux-dynamic@1.3.0
+  * libdwarf:x64-linux-dynamic@2.1.0
+  * libiconv:x64-linux-dynamic@1.18#1
+    libjpeg-turbo:x64-linux-dynamic@3.1.1
+    libjxl:x64-linux-dynamic@0.11.1#3
+  * liblzma:x64-linux-dynamic@5.8.1
+  * libogg:x64-linux-dynamic@1.3.6#1
+    libpng[apng,core]:x64-linux-dynamic@1.6.50
+    libproxy:x64-linux-dynamic@0.4.18#3
+  * libtheora:x64-linux-dynamic@1.2.0
+    libtommath:x64-linux-dynamic@1.3.0#2 -- /workspace/Meta/CMake/vcpkg/overlay-ports/libtommath
+  * libuuid:x64-linux-dynamic@1.0.3#15
+  * libvorbis:x64-linux-dynamic@1.3.7#4
+  * libvpx:x64-linux-dynamic@1.15.2#2
+    libwebp[anim,core,img2webp,libwebpmux,mux,nearlossless,simd]:x64-linux-dynamic@1.6.0#1
+    libxml2[core,iconv,zlib]:x64-linux-dynamic@2.15.0
+  * libyuv:x64-linux-dynamic@1916
+  * nghttp2:x64-linux-dynamic@1.67.1
+  * nghttp3:x64-linux-dynamic@1.11.0#1
+  * ngtcp2[core,openssl]:x64-linux-dynamic@1.15.1
+  * opengl-registry:x64-linux-dynamic@2024-02-10#1
+  * openh264:x64-linux-dynamic@2.6.0#3
+    openssl:x64-linux-dynamic@3.5.3
+  * opus:x64-linux-dynamic@1.5.2
+  * pkgconf:x64-linux-dynamic@2.5.1#2
+  * pthread:x64-linux-dynamic@3.0.0#2
+  * pthreads:x64-linux-dynamic@3.0.0#14
+    sdl3:x64-linux-dynamic@3.2.22
+    simdutf:x64-linux-dynamic@7.4.0
+    skia[core,fontconfig,freetype,gl,harfbuzz,icu,vulkan]:x64-linux-dynamic@129#2 -- /workspace/Meta/CMake/vcpkg/overlay-ports/skia
+    sqlite3[core,json1]:x64-linux-dynamic@3.50.4
+    tiff[core,jpeg,lzma,zip,zstd]:x64-linux-dynamic@4.7.0
+  * vcpkg-cmake:x64-linux-dynamic@2024-04-23
+  * vcpkg-cmake-config:x64-linux-dynamic@2024-05-23
+  * vcpkg-cmake-get-vars:x64-linux-dynamic@2025-05-29
+  * vcpkg-get-python-packages:x64-linux-dynamic@2025-04-05
+  * vcpkg-gn:x64-linux-dynamic@2025-08-05
+  * vcpkg-make:x64-linux-dynamic@2025-09-14
+  * vcpkg-pkgconfig-get-modules:x64-linux-dynamic@2024-04-03
+  * vcpkg-tool-gn:x64-linux-dynamic@2025-08-05#1
+  * vcpkg-tool-meson:x64-linux-dynamic@1.9.0#1
+    vulkan:x64-linux-dynamic@2023-12-17 -- /workspace/Meta/CMake/vcpkg/overlay-ports/vulkan
+    vulkan-headers:x64-linux-dynamic@1.4.309.0
+  * vulkan-memory-allocator:x64-linux-dynamic@3.3.0
+    woff2:x64-linux-dynamic@1.0.2#5
+    zlib:x64-linux-dynamic@1.3.1
+  * zstd:x64-linux-dynamic@1.5.7
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from /workspace/Build/caches/vcpkg-binary-cache in 38.5 us. Use --debug to see more details.
+Installing 1/67 vcpkg-cmake:x64-linux-dynamic@2024-04-23...
+Building vcpkg-cmake:x64-linux-dynamic@2024-04-23...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake_x64-linux-dynamic/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake_x64-linux-dynamic/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake_x64-linux-dynamic/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake_x64-linux-dynamic/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake_x64-linux-dynamic/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-cmake:x64-linux-dynamic@2024-04-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake:x64-linux-dynamic: 17.3 ms
+vcpkg-cmake:x64-linux-dynamic package ABI: bdeae2e0c8b61c4ea99729aaf243cbe85ec2cd9787448316ead9a63b8198ef55
+Installing 2/67 zlib:x64-linux-dynamic@1.3.1...
+Building zlib:x64-linux-dynamic@1.3.1...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download madler-zlib-v1.3.1.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/8c9642495bafd6fad4ab9fb67f09b268c69ff9af0f4f20cf15dfc18852ff1f312bd8ca41de761b3f8d8e90e77d79f2ccacd3d4c5b19e475ecf09d021fdfe9088
+Download successful! Asset cache hit, did not try authoritative source https://github.com/madler/zlib/archive/v1.3.1.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/madler-zlib-v1.3.1.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-build-static-or-shared-not-both.patch
+-- Applying patch 0003-android-and-mingw-fixes.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/zlib/src/v1.3.1-2e5db616bf.clean
+-- Configuring x64-linux-dynamic
+-- Building x64-linux-dynamic-dbg
+-- Building x64-linux-dynamic-rel
+-- Installing: /workspace/Build/vcpkg/packages/zlib_x64-linux-dynamic/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/zlib_x64-linux-dynamic/lib/pkgconfig/zlib.pc
+-- Fixing pkgconfig file: /workspace/Build/vcpkg/packages/zlib_x64-linux-dynamic/debug/lib/pkgconfig/zlib.pc
+-- Installing: /workspace/Build/vcpkg/packages/zlib_x64-linux-dynamic/share/zlib/copyright
+Trying to download patchelf-0.14.5-x86_64.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/5e983a25b3f3f3b8582d1de6c7de30812e8d6e58e96f711f33a2634d3fb1f2370531da179927aa401328319f92465e6f76274a6f994d1dc54c74b98e704d0d29
+Asset cache miss; trying authoritative source https://github.com/NixOS/patchelf/releases/download/0.14.5/patchelf-0.14.5-x86_64.tar.gz
+Successfully downloaded patchelf-0.14.5-x86_64.tar.gz
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/zlib_x64-linux-dynamic/debug/lib/libz.so.1.3.1' (From '' -> To '$ORIGIN')
+-- Adjusted RPATH of '/workspace/Build/vcpkg/packages/zlib_x64-linux-dynamic/lib/libz.so.1.3.1' (From '' -> To '$ORIGIN')
+-- Performing post-build validation
+Starting submission of zlib:x64-linux-dynamic@1.3.1 to 1 binary cache(s) in the background
+Elapsed time to handle zlib:x64-linux-dynamic: 3.5 s
+zlib:x64-linux-dynamic package ABI: d64c4e54caee01cbe4974a37b2754b7ad83a9fce3828f5bf2977f64177d58d40
+Completed submission of vcpkg-cmake:x64-linux-dynamic@2024-04-23 to 1 binary cache(s) in 2.81 ms
+Installing 3/67 vcpkg-get-python-packages:x64-linux-dynamic@2025-04-05...
+Building vcpkg-get-python-packages:x64-linux-dynamic@2025-04-05...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of vcpkg-get-python-packages:x64-linux-dynamic@2025-04-05 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-get-python-packages:x64-linux-dynamic: 21.4 ms
+vcpkg-get-python-packages:x64-linux-dynamic package ABI: bed4c54e740a5d4597eac747c0a9b9a2c133e33b095104bf9ac8b83efdb4b1df
+Completed submission of zlib:x64-linux-dynamic@1.3.1 to 1 binary cache(s) in 20.8 ms
+Installing 4/67 vcpkg-cmake-config:x64-linux-dynamic@2024-05-23...
+Building vcpkg-cmake-config:x64-linux-dynamic@2024-05-23...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake-config_x64-linux-dynamic/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake-config_x64-linux-dynamic/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: /workspace/Build/vcpkg/packages/vcpkg-cmake-config_x64-linux-dynamic/share/vcpkg-cmake-config/copyright
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of vcpkg-cmake-config:x64-linux-dynamic@2024-05-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake-config:x64-linux-dynamic: 14.6 ms
+vcpkg-cmake-config:x64-linux-dynamic package ABI: a0f210139f5847b892a0dc1e816077953972bf8c2c43f21f6cad6434f93e8725
+Completed submission of vcpkg-get-python-packages:x64-linux-dynamic@2025-04-05 to 1 binary cache(s) in 2.1 ms
+Installing 5/67 egl-registry:x64-linux-dynamic@2024-01-25...
+Building egl-registry:x64-linux-dynamic@2024-01-25...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/474d7a4d614efed18151e0ff18840aaa8349ec0b01ec3cc4e6ff3f60fdb918e0b8c68dbb13e09dc5e7b081a9eb637b008b48b1a4be537d360f9a6d247b7b8802
+Download successful! Asset cache hit, did not try authoritative source https://github.com/KhronosGroup/EGL-Registry/archive/7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/egl-registry/src/274f9019e6-49d6bdb34a.clean
+-- Installing: /workspace/Build/vcpkg/packages/egl-registry_x64-linux-dynamic/share/egl-registry/copyright
+-- Performing post-build validation
+Starting submission of egl-registry:x64-linux-dynamic@2024-01-25 to 1 binary cache(s) in the background
+Elapsed time to handle egl-registry:x64-linux-dynamic: 1.3 s
+egl-registry:x64-linux-dynamic package ABI: a4ab02ac085d14255c9bb6e099d4b6b1a763ab292e77c6f5141a14578a93aaff
+Completed submission of vcpkg-cmake-config:x64-linux-dynamic@2024-05-23 to 1 binary cache(s) in 2.23 ms
+Installing 6/67 opengl-registry:x64-linux-dynamic@2024-02-10#1...
+Building opengl-registry:x64-linux-dynamic@2024-02-10#1...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+Trying to download KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/1b2260e2baf2f40964ff6677ce2c5f0e970752408e94b251d443de57c2021d8848dda8ba61ba67547692dfd283fd2351fc900da60e3973f14b7b9be8a5ec5145
+Download successful! Asset cache hit, did not try authoritative source https://github.com/KhronosGroup/OpenGL-Registry/archive/3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+-- Using source at /workspace/Build/vcpkg/buildtrees/opengl-registry/src/f632f7ea33-4952f9ace9.clean
+-- Installing: /workspace/Build/vcpkg/packages/opengl-registry_x64-linux-dynamic/share/opengl-registry/copyright
+-- Performing post-build validation
+Starting submission of opengl-registry:x64-linux-dynamic@2024-02-10#1 to 1 binary cache(s) in the background
+Elapsed time to handle opengl-registry:x64-linux-dynamic: 6.9 s
+opengl-registry:x64-linux-dynamic package ABI: e7a5aa82f5fb8289f3e7bde8bff49da4688600d1c858d42eb0890ab0b81ee856
+Completed submission of egl-registry:x64-linux-dynamic@2024-01-25 to 1 binary cache(s) in 6.29 ms
+Installing 7/67 angle:x64-linux-dynamic@chromium_7258...
+Building angle:x64-linux-dynamic@chromium_7258...
+/workspace/Meta/CMake/vcpkg/debug-triplets/x64-linux-dynamic.cmake: info: loaded overlay triplet from here
+/workspace/Meta/CMake/vcpkg/overlay-ports/angle: info: installing overlay port from here
+CMake Warning at /workspace/Meta/CMake/vcpkg/overlay-ports/angle/portfile.cmake:2 (message):
+  Building with a gcc version less than 6.1 is not supported.
+Call Stack (most recent call first):
+  scripts/ports.cmake:206 (include)
+
+
+CMake Warning at /workspace/Meta/CMake/vcpkg/overlay-ports/angle/portfile.cmake:3 (message):
+  angle currently requires the following libraries from the system package
+  manager:
+
+      mesa-common-dev
+
+  
+
+  These can be installed on Ubuntu systems via apt-get install
+  mesa-common-dev.
+Call Stack (most recent call first):
+  scripts/ports.cmake:206 (include)
+
+
+Trying to download google-angle-79ac1a8cd767a32cce6401203e20c4bd4ca4d539.tar.gz using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/a3d5d09460f05f1f1c081411bf15f585bb8add5f3db7c4854dc2cf2ef1fd22dd5b2dd5d3de78bfb8bcdae8459dd9581f7dce331acd34053c87c84cfe6c3d134c
+Download successful! Asset cache hit, did not try authoritative source https://github.com/google/angle/archive/79ac1a8cd767a32cce6401203e20c4bd4ca4d539.tar.gz
+-- Extracting source /workspace/Build/vcpkg/downloads/google-angle-79ac1a8cd767a32cce6401203e20c4bd4ca4d539.tar.gz
+-- Applying patch 001-fix-builder-error.patch
+-- Applying patch fix-freebsd.patch
+-- Using source at /workspace/Build/vcpkg/buildtrees/angle/src/bd4ca4d539-27842c5e34.clean
+Trying to download gni-to-cmake.py using asset cache https://vcpkg-cache.app.ladybird.org/ladybird/source-assets/cf9dab1b59cd44b9ce05a2dc4636115e770dfe7d5cfbd90c3fef659628ac8155c57b866480f7cfe9a0afeb31ff5ce5eed74473f386120a7fc5910e8b032bd61d
+Download successful! Asset cache hit, did not try authoritative source https://github.com/WebKit/WebKit/raw/0742522b24152262b04913242cb0b3c48de92ba0/Source/ThirdParty/ANGLE/gni-to-cmake.py
+-- Setting up python virtual environment...
+CMake Error at scripts/cmake/vcpkg_execute_required_process.cmake:127 (message):
+    Command failed: /usr/bin/python3 -I -m venv --symlinks /workspace/Build/vcpkg/buildtrees/angle/x64-linux-dynamic-venv
+    Working Directory: /workspace/Build/vcpkg/buildtrees/angle
+    Error code: 1
+    See logs for more information:
+      /workspace/Build/vcpkg/buildtrees/angle/venv-setup-x64-linux-dynamic-out.log
+
+Call Stack (most recent call first):
+  /workspace/Build/debug/vcpkg_installed/x64-linux-dynamic/share/vcpkg-get-python-packages/x_vcpkg_get_python_packages.cmake:94 (vcpkg_execute_required_process)
+  /workspace/Meta/CMake/vcpkg/overlay-ports/angle/portfile.cmake:84 (x_vcpkg_get_python_packages)
+  scripts/ports.cmake:206 (include)
+
+
+error: building angle:x64-linux-dynamic failed with: BUILD_FAILED
+See https://learn.microsoft.com/vcpkg/troubleshoot/build-failures?WT.mc_id=vcpkg_inproduct_cli for more information.
+Elapsed time to handle angle:x64-linux-dynamic: 2.9 s
+Please ensure you're using the latest port files with `git pull` and `vcpkg update`.
+Then check for known issues at:
+  https://github.com/microsoft/vcpkg/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+angle
+You can submit a new issue at:
+  https://github.com/microsoft/vcpkg/issues/new?title=%5Bangle%5D%20build%20error%20on%20x64-linux-dynamic&body=Copy%20issue%20body%20from%20%2Fworkspace%2FBuild%2Fdebug%2Fvcpkg_installed%2Fvcpkg%2Fissue_body.md
+You can also submit an issue by running (GitHub CLI must be installed):
+  /usr/local/bin/gh issue create -R microsoft/vcpkg --title "[angle] Build failure on x64-linux-dynamic" --body-file /workspace/Build/debug/vcpkg_installed/vcpkg/issue_body.md
+Completed submission of opengl-registry:x64-linux-dynamic@2024-02-10#1 to 1 binary cache(s) in 68.2 ms
+-- Running vcpkg install - failed
+CMake Error at Build/vcpkg/scripts/buildsystems/vcpkg.cmake:943 (message):
+  vcpkg install failed.  See logs for more information:
+  /workspace/Build/debug/vcpkg-manifest-install.log
+Call Stack (most recent call first):
+  /usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:146 (include)
+  CMakeLists.txt:30 (project)
+
+
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+-- Configuring incomplete, errors occurred!
+Building vcpkg@b0b3de1b1a0aa4b8f2822460aa7f42f991629b3f
